@@ -1,0 +1,56 @@
+import 'package:flutter/cupertino.dart';
+
+final myGridViewBuilder = GridView.builder(
+  scrollDirection: Axis.vertical,
+  reverse: true,
+  padding: EdgeInsets.all(8),
+  clipBehavior: Clip.hardEdge,
+  primary: true,
+  physics: NeverScrollableScrollPhysics(),
+  addAutomaticKeepAlives: true,
+  controller: ScrollController(),
+  cacheExtent: 150,
+  shrinkWrap: true,
+  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+  itemCount: 30,
+  itemBuilder: (context, index) {},
+  semanticChildCount: 3,
+);
+
+final myGridViewExtent = GridView.extent(
+  scrollDirection: Axis.vertical,
+  reverse: true,
+  padding: EdgeInsets.all(8),
+  clipBehavior: Clip.hardEdge,
+  primary: true,
+  physics: NeverScrollableScrollPhysics(),
+  addAutomaticKeepAlives: true,
+  controller: ScrollController(),
+  cacheExtent: 150,
+  shrinkWrap: true,
+  mainAxisSpacing: 20,
+  crossAxisSpacing: 10,
+  maxCrossAxisExtent: 100,
+  children: [],
+  childAspectRatio: 1,
+  semanticChildCount: 3,
+);
+
+final myGridViewCount = GridView.count(
+  scrollDirection: Axis.vertical,
+  reverse: true,
+  padding: EdgeInsets.all(8),
+  clipBehavior: Clip.hardEdge,
+  primary: true,
+  physics: NeverScrollableScrollPhysics(),
+  addAutomaticKeepAlives: true,
+  controller: ScrollController(),
+  cacheExtent: 150,
+  shrinkWrap: true,
+  mainAxisSpacing: 20,
+  crossAxisSpacing: 10,
+  crossAxisCount: 3,
+  children: [],
+  childAspectRatio: 1,
+  semanticChildCount: 3,
+);
