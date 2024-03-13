@@ -11,7 +11,9 @@ Future myShowDialog(BuildContext context) {
             backgroundColor: Colors.amber,
             elevation: 20,
           ),
-      barrierDismissible: true);
+      barrierDismissible: true,
+      barrierColor: Colors.amber,
+      barrierLabel: 'abc');
 }
 
 final myDialog = Dialog(

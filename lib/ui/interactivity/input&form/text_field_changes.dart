@@ -10,17 +10,17 @@ class TextFieldChanges extends StatefulWidget {
 }
 
 class _TextFieldChangesState extends State<TextFieldChanges> {
-  final myController = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
 
   @override
   void initState() {
-    myController.addListener(_printLastestValue);
+    _controller.addListener(_printLastestValue);
     super.initState();
   }
 
   @override
   void dispose() {
-    myController.dispose();
+    _controller.dispose();
     super.dispose();
   }
 
@@ -36,7 +36,7 @@ class _TextFieldChangesState extends State<TextFieldChanges> {
               print('First text field: $text (${text.characters.length})');
             }),
             TextField(
-              controller: myController,
+              controller: _controller,
             ),
           ],
         ),
@@ -45,7 +45,7 @@ class _TextFieldChangesState extends State<TextFieldChanges> {
   }
 
   void _printLastestValue() {
-    final text = myController.text;
+    final text = _controller.text;
     print('Second text field: $text (${text.characters.length})');
   }
 }

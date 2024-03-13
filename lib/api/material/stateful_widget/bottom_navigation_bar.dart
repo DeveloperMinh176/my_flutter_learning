@@ -8,4 +8,4 @@ final myBottomNavigationBar = BottomNavigationBar(
 );
 
 final myBottomNavigationBarItem = BottomNavigationBarItem(
-    icon: Icon(Icons.abc), label: 'ab', backgroundColor: Colors.amber);
+    icon: Icon(Icons.abc), label: 'ab', backgroundColor: const Color.fromARGB(255, 7, 6, 5));

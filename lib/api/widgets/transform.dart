@@ -14,6 +14,12 @@ final myTransform1 = Transform.scale(
   child: null,
 );
 
+final myTransform3 = Transform.rotate(
+  angle: 2,
+  alignment: Alignment.bottomCenter,
+  child: null,
+);
+
 final myTransform2 = Transform.translate(
   offset: Offset(0, 0),
   child: null,
