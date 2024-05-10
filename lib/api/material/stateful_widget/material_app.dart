@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 final myMaterialApp = MaterialApp(
+  debugShowMaterialGrid: true,
+  showPerformanceOverlay: true,
   color: Colors.amber,
   title: "My MaterialApp",
   localizationsDelegates: [

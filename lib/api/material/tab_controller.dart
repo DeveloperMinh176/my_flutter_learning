@@ -7,11 +7,13 @@ class MyTabController extends State<StatefulWidget>
     length: 3,
     vsync: this,
   );
+
   final myDefaultTabController =
       DefaultTabController(initialIndex: 1, length: 3, child: Container());
 
   @override
   Widget build(BuildContext context) {
+    myTabController.index = 2;
     // TODO: implement build
     throw UnimplementedError();
   }

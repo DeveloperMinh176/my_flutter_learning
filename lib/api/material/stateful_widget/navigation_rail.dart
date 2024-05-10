@@ -10,6 +10,7 @@ final myNavigationRail = NavigationRail(
   ],
   onDestinationSelected: (value) {},
   selectedIndex: 3,
+  extended: true,
   indicatorColor: Colors.amber,
   backgroundColor: Colors.amber,
   labelType: NavigationRailLabelType.all,

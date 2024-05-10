@@ -21,5 +21,6 @@ final myTextField = TextField(
   ),
   onSubmitted: (value) {},
   onChanged: (value) {},
+  onEditingComplete: () {},
   controller: TextEditingController(),
 );

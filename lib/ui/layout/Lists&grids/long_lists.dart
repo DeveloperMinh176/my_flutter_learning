@@ -13,10 +13,16 @@ class MyList extends StatelessWidget {
   const MyList({super.key, required this.items});
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: items.length,
-      prototypeItem: ListTile(title: Text(items.first)),
-      itemBuilder: (context, index) => ListTile(title: Text(items[index])),
+    return MaterialApp(
+      home: Scaffold(
+        body: ListView.builder(
+          key: Key('long_list'),
+          itemCount: items.length,
+          prototypeItem: ListTile(title: Text(items.first)),
+          itemBuilder: (context, index) => ListTile(
+              title: Text(key: Key('item_${index}_text'), items[index])),
+        ),
+      ),
     );
   }
 }

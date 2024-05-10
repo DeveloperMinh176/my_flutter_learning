@@ -1,0 +1,13 @@
+AnimationController(duration, vsync);
+AnimationController.value;
+AnimationController.status;
+AnimationController.addListener();
+AnimationController.addStatusListener();
+AnimationController.fling();
+AnimationController.forward(from: controller.value);
+AnimationController.reverse();
+AnimationController.repeat(reverse: true);
+AnimationController.stop();
+AnimationController.animateWith();
+
+
